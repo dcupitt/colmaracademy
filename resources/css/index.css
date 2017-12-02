@@ -15,7 +15,6 @@ h2 {
   font-size: 1.75rem;
   font-weight: 900;
   line-height: 2rem;
-  padding: 0.75rem 0;
 }
 
 h3 {
@@ -23,13 +22,6 @@ h3 {
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5rem;
-  padding: 0.5rem 0;
-}
-
-a {
-  color: #0eb2e8;
-  text-decoration: none;
-  font-weight: 700;
 }
 
 .quote {
@@ -43,6 +35,13 @@ p {
 
 body {
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding-bottom: 0.5rem;
 }
 
 /* Navbar */
@@ -76,9 +75,30 @@ body {
 
 nav li {
   display: inline-block;
-  padding-right: 16px;
+  padding: 5px 8px;
+  border-bottom: 3px solid #FFF;
+  transition-duration: 500ms;
 }
 
+nav li:hover {
+  border-bottom: 3px solid #330640;
+}
+
+nav li:active {
+  border-bottom: 3px solid #70B6ED;
+  color: #70B6ED;
+  transition-duration: 200ms;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:active {
+  color: #70B6ED;
+  transition-duration: 200ms;
+}
 /* Banner */
 
 .container {
@@ -109,11 +129,11 @@ nav li {
   padding: 20px;
 }
 
-/* Button */
+/* Buttons */
 
 .btn {
   color: white;
-  background-color: #3B3B3B;
+  background-color: #330640;
   text-align: center;
   padding: 10px;
   width: 100%;
@@ -124,13 +144,34 @@ nav li {
 
 .btn:hover {
   transition-duration: 500ms;
-  background-color: #737373;
+  background-color: #70B6ED;
+  border: none;
+  border-radius: 0;
+}
+
+.mini-btn {
+  color: #70B6ED;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 3px;
+}
+
+.mini-btn:hover {
+  background-color: #330640;
+  border: 1px solid #330640;
+  border-radius: 5px;
+  transition-duration: 300ms;
 }
 
 /* Middle info sections */
 
 .middle {
   padding-bottom: 32px;
+}
+
+.main img,
+.main video {
+  padding-bottom: 20px;
 }
 
 .side {
@@ -147,12 +188,9 @@ nav li {
   border-bottom: 1px solid #D1D1D1;
 }
 
-.text h3 {
-  padding-top: 0px;
-}
-
 .info:hover {
   background-color: #D1D1D1;
+  transition-duration: 500ms;
 }
 
 .info img {
@@ -176,6 +214,10 @@ nav li {
 
 .classes h2 {
   padding-bottom: 40px;
+}
+
+.community h2 {
+  padding-bottom: 20px;
 }
 
 .course-work {
@@ -219,4 +261,9 @@ footer {
 
 footer span {
   padding-left: 15px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
 }
