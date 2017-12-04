@@ -324,7 +324,7 @@ footer a {
     width: 30%;
     flex-direction: column;
     border-bottom: none;
-    padding: 0;
+    padding: 10px;
   }
   .info img {
     width: 100%;
