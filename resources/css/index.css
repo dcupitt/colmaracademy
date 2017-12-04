@@ -431,6 +431,7 @@ footer a {
     padding: 20px 0px;
     margin: 10px auto;
     text-align: center;
+    transition-duration: 1s;
   }
   .classes .mobile h3:first-child {
     margin-top: 0;
